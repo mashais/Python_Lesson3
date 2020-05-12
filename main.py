@@ -1,3 +1,4 @@
+from collections import Counter
 
 file = open('text.txt', encoding='UTF-8')
 my_new_text = file.read()
@@ -23,7 +24,6 @@ print(type(my_new_text), len(my_new_text), my_new_text)
 
 #  4) получить из list пункта 3 dict, ключами которого являются слова, а значениями их количество появлений в тексте;
 
-from collections import Counter
 mydict = dict(Counter(my_new_text))
 print(type(mydict), len(mydict), mydict)
 
